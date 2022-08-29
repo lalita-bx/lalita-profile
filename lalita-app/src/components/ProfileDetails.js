@@ -21,12 +21,12 @@ const ProfileDetails = () =>{
         // bg-gradient-to-r from-pink-200 via-pink-100 to-pink-50 
         // <div class="profile-body flex flex-wrap w-auto gap-4 justify-center items-center px-10 py-10">
 
-        <div class="profile-body flex flex-wrap items-center justify-center">
+        <div class="profile-body flex flex-wrap items-center justify-center gap">
             {/* <div class="flex flex-wrap items-center justify-center"> */}
-                <div class="basis-1/4 bg-black">
+                <div class="basis-96 h-auto md:basis-1/4 md:card">
                 {/* className="card" */}
                         {/* hover:animate-bounce hover:opacity-50 cursor-pointer */}
-                    <Card className="card">
+                    <Card className="card mx-1 md:ml-10 md:mr-5">
                         <CardHeader floated={false} className="relative h-50 hover:opacity-80 cursor-pointer">
                             <img
                                 src="/darwin-confused.png"
@@ -81,9 +81,9 @@ const ProfileDetails = () =>{
                         </CardFooter>
                     </Card>
                 </div>
-                <div class="basis-3/4 bg-green-500">
+                <div class="basis-96 h-auto md:basis-3/4 md:card">
                 {/* className="max-w-4xl min-w-4xl" */}
-                    <Card className="card" >
+                    <Card className="card mx-1 my-6 md:mr-10" >
                         <CardBody>
                             <Details />
                         </CardBody>
