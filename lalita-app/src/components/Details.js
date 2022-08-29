@@ -60,7 +60,7 @@ const Details = () =>{
                 <TabPanel key={value} value={value}>
                   {
                       value==="experience" ? <Experience/>
-                      : value==="about" ? <p class="text-xl">{desc}</p> 
+                      : value==="about" ? <p class="text-xl card-body flex flex-wrap flex-col items-center justify-center">{desc}</p> 
                       : value==="skills" ? <Skills/> 
                       : <Education/>
                   }

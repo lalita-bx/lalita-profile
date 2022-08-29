@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   /* font-family: 'Quicksand', sans-serif !important; */
   text-align: center;
@@ -25,7 +29,6 @@
   display: flex;
   flex-direction: column;
   background-size: cover;
-  transform:scaleY(-1);
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -39,7 +42,7 @@
 .profile-body {
   /* min-height: 100vh;
   background-image: url('../public/bg002.png'); */
-  background-image: url('../public/bg002.png');
+  background-image: url('../public/bg003.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -59,9 +62,9 @@
   background: rgba(255, 255, 255, 0.5)
 }
 
-/* .card-body {
-  max-width: 50rem;
-} */
+.card-body {
+  height: 55vh;
+}
 
 div.ex1 {
   width: 50rem;
