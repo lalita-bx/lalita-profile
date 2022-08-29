@@ -1,14 +1,17 @@
 // import logo from './logo.svg';
 import './App.css';
 import ProfileDetails from './components/ProfileDetails';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <p>
-                    header.
-                </p>
+                {/* <h1>
+                    <span class="bg-clip-text text-5xl text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+                        header
+                    </span>
+                </h1> */}
                 {/* <img src={logo} className="App-logo" alt="logo" />
                 <p>
                 Edit <code>src/App.js</code> and save to reload.
@@ -22,7 +25,7 @@ function App() {
                 Learn React
                 </a> */}
             </header>
-            <div >
+            <div>
                 <ProfileDetails />
             </div>
         </div>

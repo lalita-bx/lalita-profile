@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .App {
-  font-family: 'Quicksand', sans-serif;
+  /* font-family: 'Quicksand', sans-serif !important; */
   text-align: center;
 }
 
@@ -20,7 +19,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  background-image: url('../public/bg001.png');
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -32,6 +32,39 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.profile-body {
+  /* min-height: 100vh;
+  background-image: url('../public/bg002.png'); */
+  background-image: url('../public/bg002-01.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  background-color: #f4f6fa;
+  min-height: 100vh;
+  display: flex;
+  /* 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white; */
+}
+
+.card {
+  height: 80vh;
+  /* background: rgba(255, 255, 255, 0.7) */
+}
+
+/* .card-body {
+  max-width: 50rem;
+} */
+
+div.ex1 {
+  width: 50rem;
+  margin: auto;
+  border: 3px solid #73AD21;
 }
 
 @keyframes App-logo-spin {
