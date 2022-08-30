@@ -20,7 +20,7 @@ function App() {
                     </div>
                 </div>
             </header>
-            <div id="section2">
+            <div>
                 <ProfileDetails />
             </div>
         </div>
