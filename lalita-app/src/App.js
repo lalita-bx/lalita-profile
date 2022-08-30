@@ -9,7 +9,7 @@ function App() {
 
             <header className="App-header">
                 <div className="text-8xl font-extrabold">
-                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-300  via-deep-purple-300 to-pink-200 animate-text">
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-300  via-deep-purple-200 to-pink-200 animate-text">
                         Hello<br/>
                         Hello<br/>
                         Hello<br/>

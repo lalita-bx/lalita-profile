@@ -1,6 +1,7 @@
 import Experience from './Experience';
 import Skills from './Skills';
 import Education from './Education';
+import Contact from './Contact';
 import '../App.css';
 import {
     Tabs,
@@ -13,37 +14,22 @@ import {
 const Details = () =>{
 
     const data = [
-        
         {
           label: "Experience",
-          value: "experience",
-          desc: "",
+          value: "experience"
         },
-
         {
           label: "Skills",
-          value: "skills",
-          desc: `Because it's about motivating the doers. Because I'm here
-          to follow my dreams and inspire other people to follow their dreams, too.`,
+          value: "skills"
         },
-
         {
           label: "Education",
-          value: "education",
-          desc: `Chiang Mai University\n
-          Bachelor of Science in\n 
-          Computer Science\n
-          2019
-          .`,
+          value: "education"
         },
-     
         {
           label: "Contact",
-          value: "contact",
-          desc: `Software Engineer with 3 years of experience in developing, testing and maintaining enterprise software applications.`,
+          value: "contact"
         },
-
-     
       ];
 
     return (
@@ -58,11 +44,11 @@ const Details = () =>{
             ))}
           </TabsHeader>
           <TabsBody>
-              {data.map(({ value, desc }) => (
+              {data.map(({ value }) => (
                 <TabPanel key={value} value={value}>
                   {
                       value==="experience" ? <Experience/>
-                      : value==="contact" ? <p className="text-xl card-body flex flex-wrap flex-col items-center justify-center">{desc}</p> 
+                      : value==="contact" ? <Contact/>
                       : value==="skills" ? <Skills/> 
                       : <Education/>
                   }
