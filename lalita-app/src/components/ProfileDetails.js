@@ -54,6 +54,7 @@ const ProfileDetails = () =>{
                                 href="#facebook"
                                 variant="lead"
                                 color="blue"
+                                className="hover:scale-150 transition delay-150 duration-300 ease-in-out"
                                 textGradient
                             >
                                 <i className="fab fa-facebook" />
@@ -65,6 +66,7 @@ const ProfileDetails = () =>{
                                 href="#twitter"
                                 variant="lead"
                                 color="light-blue"
+                                className="hover:scale-150 transition delay-150 duration-300 ease-in-out"
                                 textGradient
                             >
                                 <i className="fab fa-twitter" />
@@ -77,6 +79,7 @@ const ProfileDetails = () =>{
                                 variant="lead"
                                 color="purple"
                                 target="blank"
+                                className="hover:scale-150 transition delay-150 duration-300 ease-in-out"
                                 textGradient
                             >
                                 <i className="fab fa-instagram" />
