@@ -66,10 +66,29 @@ html {
   height: 55vh;
 }
 
-div.ex1 {
-  width: 50rem;
-  margin: auto;
-  border: 3px solid #73AD21;
+.card-img {
+  position: relative;
+  display: inline-block;
+  background-image: url('../public/bg004.png');
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+.card-img .img-back {
+  position: absolute !important;
+  
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+}
+.card-img:hover .img-back {
+  opacity: 1;
+}
+
+.card-img:hover .img-front {
+  opacity: 0 !important;
 }
 
 @keyframes App-logo-spin {

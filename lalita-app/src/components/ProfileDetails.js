@@ -22,21 +22,24 @@ const ProfileDetails = () =>{
         // <div class="profile-body flex flex-wrap w-auto gap-4 justify-center items-center px-10 py-10">
 
         <div class="profile-body flex flex-wrap items-center justify-center">
-            {/* <div class="flex flex-wrap items-center justify-center"> */}
                 <div class="basis-96 h-auto md:basis-2/5 md:card">
-                {/* className="card" */}
-                        {/* hover:animate-bounce hover:opacity-50 cursor-pointer */}
                     <Card className="card mx-1 md:ml-32 md:mr-5">
-                        <CardHeader floated={false} className="relative h-50 hover:opacity-80 cursor-pointer">
+                        <CardHeader floated={false} className="card-img mx-20 mt-16 h-50 cursor-pointer transition-all duration-1000">
                             <img
-                                src="/darwin-confused.png"
+                                // src="/darwin-confused.png"
+                                src="/me-hi-02.png"
                                 alt="img-blur-shadow"
-                                className="h-full w-full"
+                                className="img-front mx-auto cursor-pointer transition-all duration-1000"
+                            />
+                            <img
+                                src="/me-call.png"
+                                alt="img-blur-shadow"
+                                className="img-back mx-auto cursor-pointer transition-all duration-1000"
                             />
                         </CardHeader>
                         <CardBody className="text-center">
                             <Typography variant="h2" color="blue-gray" className="mb-2">
-                            Darwin Watterson
+                            Lalita Yodsri
                             </Typography>
                             <Typography variant="lead" color="blue-gray" textGradient>
                             Software Engineer

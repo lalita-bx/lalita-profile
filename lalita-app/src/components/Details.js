@@ -13,10 +13,18 @@ import {
 const Details = () =>{
 
     const data = [
+        
         {
-          label: "About",
-          value: "about",
-          desc: `Software Engineer with 3 years of experience in developing, testing and maintaining enterprise software applications.`,
+          label: "Experience",
+          value: "experience",
+          desc: "",
+        },
+
+        {
+          label: "Skills",
+          value: "skills",
+          desc: `Because it's about motivating the doers. Because I'm here
+          to follow my dreams and inspire other people to follow their dreams, too.`,
         },
 
         {
@@ -30,22 +38,16 @@ const Details = () =>{
         },
      
         {
-          label: "Skills",
-          value: "skills",
-          desc: `Because it's about motivating the doers. Because I'm here
-          to follow my dreams and inspire other people to follow their dreams, too.`,
+          label: "Contact",
+          value: "contact",
+          desc: `Software Engineer with 3 years of experience in developing, testing and maintaining enterprise software applications.`,
         },
 
-        {
-          label: "Experience",
-          value: "experience",
-          desc: "",
-        },
      
       ];
 
     return (
-        <Tabs value="about">
+        <Tabs value="experience">
           <TabsHeader>
             {data.map(({ label, value }) => (
               <Tab key={value} value={value}>
@@ -60,7 +62,7 @@ const Details = () =>{
                 <TabPanel key={value} value={value}>
                   {
                       value==="experience" ? <Experience/>
-                      : value==="about" ? <p class="text-xl card-body flex flex-wrap flex-col items-center justify-center">{desc}</p> 
+                      : value==="contact" ? <p class="text-xl card-body flex flex-wrap flex-col items-center justify-center">{desc}</p> 
                       : value==="skills" ? <Skills/> 
                       : <Education/>
                   }
