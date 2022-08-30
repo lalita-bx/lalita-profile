@@ -47,7 +47,7 @@ html {
   background-size: cover;
   background-position: bottom;
   background-color: #f4f6fa;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   /* display: flex; */
   /* 
   flex-direction: column;
@@ -75,7 +75,7 @@ html {
 .card-img {
   position: relative;
   display: inline-block;
-  background-image: url('../public/bg004.png');
+  background-image: url('../public/bg007.png');
   background-size: cover;
   background-repeat: repeat;
 }
@@ -97,11 +97,11 @@ html {
   opacity: 0 !important;
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
