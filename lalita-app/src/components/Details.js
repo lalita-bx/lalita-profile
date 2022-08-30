@@ -51,7 +51,7 @@ const Details = () =>{
           <TabsHeader>
             {data.map(({ label, value }) => (
               <Tab key={value} value={value}>
-                <p class="text-lg font-semibold">
+                <p className="text-lg font-semibold">
                 {label}
                 </p>
               </Tab>
@@ -62,7 +62,7 @@ const Details = () =>{
                 <TabPanel key={value} value={value}>
                   {
                       value==="experience" ? <Experience/>
-                      : value==="contact" ? <p class="text-xl card-body flex flex-wrap flex-col items-center justify-center">{desc}</p> 
+                      : value==="contact" ? <p className="text-xl card-body flex flex-wrap flex-col items-center justify-center">{desc}</p> 
                       : value==="skills" ? <Skills/> 
                       : <Education/>
                   }
