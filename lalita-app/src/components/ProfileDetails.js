@@ -7,6 +7,9 @@ import {
     CardBody,
     CardFooter,
     Typography,
+    Popover,
+    PopoverHandler,
+    PopoverContent,
 } from "@material-tailwind/react";
 
 const ProfileDetails = () =>{
@@ -33,21 +36,28 @@ const ProfileDetails = () =>{
                         Lalita Yodsri
                         </Typography>
                         <p className="font-semibold">Software Engineer</p>
-                        <Typography variant="paragraph" color="blue-gray" className="mb-2">
+                        <Typography variant="paragraph" color="blue-gray" className="my-2 italic">
                             3 years of experience in developing, testing<br/> and maintaining enterprise software applications.
                         </Typography>
                     </CardBody>
                     <CardFooter className="flex justify-center gap-7">
-                        <Typography
-                            as="a"
-                            href="#facebook"
-                            variant="lead"
-                            color="blue"
-                            className="hover:scale-150 transition duration-300 ease-in-out"
-                            textGradient
-                        >
-                            <i className="fab fa-facebook" />
-                        </Typography>
+                            <Popover placement="bottom">
+                                <PopoverHandler>
+                                    <Typography
+                                        as="a"
+                                        href="#facebook"
+                                        variant="lead"
+                                        color="blue"
+                                        className="hover:scale-150 transition duration-300 ease-in-out"
+                                        textGradient
+                                    >
+                                        <i className="fab fa-facebook" />
+                                    </Typography>
+                                </PopoverHandler>
+                                <PopoverContent>
+                                    Sorry, Please try next social media. <i className="fas fa-heart" />
+                                </PopoverContent>
+                            </Popover>
                         <Typography
                             as="a"
                             href="https://www.linkedin.com/in/lalita-bibx"
