@@ -34,7 +34,7 @@ const Details = () =>{
 
     return (
         <Tabs value="experience">
-          <TabsHeader>
+          <TabsHeader className="overflow-y-auto">
             {data.map(({ label, value }) => (
               <Tab key={value} value={value}>
                 <p className="text-lg font-semibold">
