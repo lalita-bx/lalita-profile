@@ -31,9 +31,8 @@ const Experience = () =>{
         },
      
     ];
-
     return (
-        <div className="flex text-left my-5 card-exp overflow-auto">
+        <div className="flex text-left mt-5 md:mt-10 mx-0 md:mx-5 card-exp overflow-auto">
             <ol className="relative h-fit border-l border-gray-300 dark:border-gray-700">   
                 {data.map(({ label, time, desc }) => (
                     <li key={label} value={desc} className="mb-8 ml-4">

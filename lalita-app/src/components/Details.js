@@ -34,7 +34,7 @@ const Details = () =>{
 
     return (
         <Tabs value="experience">
-          <TabsHeader>
+          <TabsHeader className="overflow-y-auto">
             {data.map(({ label, value }) => (
               <Tab key={value} value={value}>
                 <p className="text-lg font-semibold">
@@ -45,7 +45,7 @@ const Details = () =>{
           </TabsHeader>
           <TabsBody>
               {data.map(({ value }) => (
-                <TabPanel key={value} value={value}>
+                <TabPanel key={value} value={value} className="p-0">
                   {
                       value==="experience" ? <Experience/>
                       : value==="contact" ? <Contact/>
