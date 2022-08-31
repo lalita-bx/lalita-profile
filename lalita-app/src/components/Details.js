@@ -2,7 +2,7 @@ import Experience from './Experience';
 import Skills from './Skills';
 import Education from './Education';
 import Contact from './Contact';
-import '../App.css';
+import '../styles/styles.css'
 import {
     Tabs,
     TabsHeader,

@@ -1,5 +1,4 @@
-// import './ProfileDetails.css';
-import '../App.css';
+import '../styles/styles.css'
 import Details from './Details';
 
 import {
@@ -12,10 +11,11 @@ import {
 
 const ProfileDetails = () =>{
     return (
-        <div className="flex flex-wrap md:flex-nowrap items-center justify-center" id="section2">
-            <div className="basis-96 h-auto md:basis-2/5 md:card">
-                <Card className="card mx-1 mt-5 md:mt-0 md:ml-32 md:mr-5">
-                    <CardHeader floated={false} className="card-img mx-20 mt-16 h-50 transition-all duration-500">
+
+        <div className="grid grid-cols-6 grid-flow-row px-10 pt-10 md:pt-20 md:mx-20 gap-4" id="section2">
+            <div className="self-center justify-self-center md:col-span-2 col-span-6 w-full h-full">
+                <Card className="card h-full">
+                    <CardHeader floated={false} className="card-img mx-20 h-50 transition-all duration-500">
                         <img
                             // src="/darwin-confused.png"
                             src="/me-comp.png"
@@ -32,11 +32,10 @@ const ProfileDetails = () =>{
                         <Typography variant="h2" color="blue-gray" className="mb-2">
                         Lalita Yodsri
                         </Typography>
-                        {/* <Typography variant="lead" color="blue-gray" textGradient>
-                        Software Engineer
-                        </Typography> */}
                         <p className="font-semibold">Software Engineer</p>
-                        <p className="mx-16 mt-2 italic">3 years of experience in developing, testing<br/> and maintaining enterprise software applications.</p>
+                        <Typography variant="paragraph" color="blue-gray" className="mb-2">
+                            3 years of experience in developing, testing<br/> and maintaining enterprise software applications.
+                        </Typography>
                     </CardBody>
                     <CardFooter className="flex justify-center gap-7">
                         <Typography
@@ -75,9 +74,9 @@ const ProfileDetails = () =>{
                     </CardFooter>
                 </Card>
             </div>
-            <div className="basis-96 h-auto md:basis-3/5 md:card">
-                <Card className="card mx-1 my-6 md:mr-32" >
-                    <CardBody>
+            <div className="self-center justify-self-center col-span-6 md:col-span-4 w-full h-full">
+                <Card className="card h-full">
+                    <CardBody >
                         <Details />
                     </CardBody>
                 </Card>

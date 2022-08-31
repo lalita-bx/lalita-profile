@@ -1,12 +1,61 @@
+import { 
+    Tooltip, 
+} from "@material-tailwind/react";
+
 const Skills = () =>{
     return (
         <div>
-            <div className="grid grid-cols-3 grid-flow-row auto-rows-max gap-4">
-                <div className="self-center justify-self-center col-span-3"><img className="h-48 mt-10 hover:scale-110 transition duration-300 ease-in-out" src="/logo-basic.png" alt="basic frontend"></img></div>
-                <div className="self-end justify-self-end"><img src="/logo-salesforce.png" alt="salesforce" className="h-auto md:h-40 hover:scale-110 transition duration-300 ease-in-out"></img></div>
-                <div className="self-center justify-self-center"><img src="/logo512.png" alt="react" className="h-auto md:h-48 hover:scale-110 transition duration-300 ease-in-out"></img></div>
-                <div className="self-end justify-self-start"><img src="/logo-vue.png" alt="vue" className="h-auto md:h-40 hover:scale-110 transition duration-300 ease-in-out"></img></div>
-                <div className="self-center justify-self-center col-span-3"><img src="/logo-python.png" alt="python" className="h-20 md:h-40 hover:scale-110 transition duration-300 ease-in-out"></img></div>
+            <div className="grid grid-cols-3 grid-flow-row py-5">
+                <div className="self-center justify-self-center col-span-3 md:pt-10">
+                    <Tooltip content="Basic Frontend" placement="left-start">
+                        <img className="block mx-auto h-36 hover:scale-110 transition duration-300 ease-in-out" src="/logo-basic.png" alt="basic frontend"/>
+                    </Tooltip>
+                </div>
+       
+                <div className="self-end justify-self-end">
+                    <Tooltip content="Salesforce" placement="left-end">
+                        <img src="/logo-salesforce.png" alt="salesforce" className="inline-block m-auto max-h-28 hover:scale-110 transition duration-300 ease-in-out"/>
+                    </Tooltip>
+                </div>
+
+                <div className="self-center justify-self-center">
+                    <Tooltip content="React" placement="right-end">
+                        <img src="/logo512.png" alt="react" className="inline-block max-h-36 m-auto hover:scale-110 transition duration-300 ease-in-out"/>
+                    </Tooltip>
+                </div>
+
+                <div className="self-end justify-self-start">
+                    <Tooltip content="Python" placement="right-end">
+                        <img src="/logo-python.png" alt="python" className="inline-block m-auto max-h-20 md:max-h-28 hover:scale-110 transition duration-300 ease-in-out"/>
+                    </Tooltip>
+                </div>
+
+                <div className="grid grid-cols-5 col-span-3 pt-5">
+                    <div className="self-end justify-self-end col-start-2">
+                        <Tooltip content="Github" placement="bottom">
+                            <img src="/logo-github.png" alt="github" className="inline-block m-auto max-h-28 hover:scale-110 transition duration-300 ease-in-out"/>
+                        </Tooltip>
+                    </div>
+
+                    <div className="self-center justify-self-center">
+                        <Tooltip content="Gitlab" placement="bottom">
+                            <img src="/logo-gitlab.png" alt="gitlab" className="inline-block m-auto max-h-28 hover:scale-110 transition duration-300 ease-in-out"/>
+                        </Tooltip>
+                    </div>
+
+                    <div className="self-end justify-self-start">
+                        <Tooltip content="SourceTree" placement="bottom">
+                            <img src="/logo-sourcetree.png" alt="sourcetree" className="inline-block m-auto max-h-28 hover:scale-110 transition duration-300 ease-in-out"/>
+                        </Tooltip>
+                    </div>
+                </div>
+
+                <div className="self-center justify-self-center col-span-3 pt-10 pb-5 font-bold cursor-pointer">
+                    <Tooltip content="Vue.JS, Flask, Postman" placement="bottom">
+                        .etc
+                    </Tooltip>
+                </div>
+             
             </div>
         </div>
     );

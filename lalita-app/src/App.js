@@ -1,13 +1,11 @@
-import './App.css';
+import './styles/styles.css'
 import ProfileDetails from './components/ProfileDetails';
 
 function App() {
     
     return (
-        <div className="App select-none" id="section1">
-            
-
-            <header className="App-header">
+        <div className="app select-none" id="section1">
+            <header className="app-header">
                 <div className="text-8xl font-extrabold">
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-300  via-deep-purple-200 to-pink-200 animate-text">
                         Hello<br/>
