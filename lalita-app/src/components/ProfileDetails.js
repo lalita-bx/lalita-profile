@@ -1,5 +1,4 @@
-// import './ProfileDetails.css';
-import '../App.css';
+import '../styles/styles.css'
 import Details from './Details';
 
 import {
@@ -8,89 +7,80 @@ import {
     CardBody,
     CardFooter,
     Typography,
-    Tooltip,
-    // Avatar 
 } from "@material-tailwind/react";
 
 const ProfileDetails = () =>{
     return (
-        
-        // <div className="profile-body">
-        //     Body
-        // </div>
-        // bg-gradient-to-r from-pink-200 via-pink-100 to-pink-50 
-        // <div class="profile-body flex flex-wrap w-auto gap-4 justify-center items-center px-10 py-10">
 
-        <div class="profile-body flex flex-wrap items-center justify-center">
-            {/* <div class="flex flex-wrap items-center justify-center"> */}
-                <div class="basis-96 h-auto md:basis-2/5 md:card">
-                {/* className="card" */}
-                        {/* hover:animate-bounce hover:opacity-50 cursor-pointer */}
-                    <Card className="card mx-1 md:ml-32 md:mr-5">
-                        <CardHeader floated={false} className="relative h-50 hover:opacity-80 cursor-pointer">
-                            <img
-                                src="/darwin-confused.png"
-                                alt="img-blur-shadow"
-                                className="h-full w-full"
-                            />
-                        </CardHeader>
-                        <CardBody className="text-center">
-                            <Typography variant="h2" color="blue-gray" className="mb-2">
-                            Darwin Watterson
-                            </Typography>
-                            <Typography variant="lead" color="blue-gray" textGradient>
-                            Software Engineer
-                            </Typography>
-                        </CardBody>
-                        <CardFooter className="flex justify-center gap-7">
-                            <Tooltip content="Like">
-                            <Typography
-                                as="a"
-                                href="#facebook"
-                                variant="lead"
-                                color="blue"
-                                textGradient
-                            >
-                                <i className="fab fa-facebook" />
-                            </Typography>
-                            </Tooltip>
-                            <Tooltip content="Follow">
-                            <Typography
-                                as="a"
-                                href="#twitter"
-                                variant="lead"
-                                color="light-blue"
-                                textGradient
-                            >
-                                <i className="fab fa-twitter" />
-                            </Typography>
-                            </Tooltip>
-                            <Tooltip content="Follow">
-                            <Typography
-                                as="a"
-                                href="https://www.instagram.com/bibx___/"
-                                variant="lead"
-                                color="purple"
-                                target="blank"
-                                textGradient
-                            >
-                                <i className="fab fa-instagram" />
-                            </Typography>
-                            </Tooltip>
-                            
-                        </CardFooter>
-                    </Card>
-                </div>
-                <div class="basis-96 h-auto md:basis-3/5 md:card">
-                {/* className="max-w-4xl min-w-4xl" */}
-                    <Card className="card mx-1 my-6 md:mr-32" >
-                        <CardBody>
-                            <Details />
-                        </CardBody>
-                    </Card>
-                </div>
-
-            {/* </div> */}
+        <div className="grid grid-cols-6 grid-flow-row px-10 pt-10 md:pt-20 md:mx-20 gap-4" id="section2">
+            <div className="self-center justify-self-center md:col-span-2 col-span-6 w-full h-full">
+                <Card className="card h-full">
+                    <CardHeader floated={false} className="card-img mx-20 h-50 transition-all duration-500">
+                        <img
+                            // src="/darwin-confused.png"
+                            src="/me-comp.png"
+                            alt="img-blur-shadow"
+                            className="img-front mx-auto transition-all duration-500"
+                        />
+                        <img
+                            src="/me-heart.png"
+                            alt="img-blur-shadow"
+                            className="img-back mx-auto transition-all duration-500"
+                        />
+                    </CardHeader>
+                    <CardBody className="text-center">
+                        <Typography variant="h2" color="blue-gray" className="mb-2">
+                        Lalita Yodsri
+                        </Typography>
+                        <p className="font-semibold">Software Engineer</p>
+                        <Typography variant="paragraph" color="blue-gray" className="mb-2">
+                            3 years of experience in developing, testing<br/> and maintaining enterprise software applications.
+                        </Typography>
+                    </CardBody>
+                    <CardFooter className="flex justify-center gap-7">
+                        <Typography
+                            as="a"
+                            href="#facebook"
+                            variant="lead"
+                            color="blue"
+                            className="hover:scale-150 transition duration-300 ease-in-out"
+                            textGradient
+                        >
+                            <i className="fab fa-facebook" />
+                        </Typography>
+                        <Typography
+                            as="a"
+                            href="https://www.linkedin.com/in/lalita-bibx"
+                            variant="lead"
+                            color="blue"
+                            target="blank"
+                            className="hover:scale-150 transition duration-300 ease-in-out"
+                            textGradient
+                        >
+                            <i className="fab fa-linkedin" />
+                        </Typography>
+                        <Typography
+                            as="a"
+                            href="https://www.instagram.com/bibx___/"
+                            variant="lead"
+                            color="purple"
+                            target="blank"
+                            className="hover:scale-150 transition duration-300 ease-in-out"
+                            textGradient
+                        >
+                            <i className="fab fa-instagram" />
+                        </Typography>
+                        
+                    </CardFooter>
+                </Card>
+            </div>
+            <div className="self-center justify-self-center col-span-6 md:col-span-4 w-full h-full">
+                <Card className="card h-full">
+                    <CardBody >
+                        <Details />
+                    </CardBody>
+                </Card>
+            </div>
         </div>
     );
 }
