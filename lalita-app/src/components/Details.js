@@ -45,7 +45,7 @@ const Details = () =>{
           </TabsHeader>
           <TabsBody>
               {data.map(({ value }) => (
-                <TabPanel key={value} value={value}>
+                <TabPanel key={value} value={value} className="p-0">
                   {
                       value==="experience" ? <Experience/>
                       : value==="contact" ? <Contact/>
