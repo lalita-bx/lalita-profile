@@ -29,7 +29,7 @@ code {
 
 .app-header {
     /* background-color: #282c34; */
-    background-image: url('/public/bg002.png');
+    background-image: url('/public/bg001.png');
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -41,7 +41,7 @@ code {
 }
 
 .profile-body {
-    background-image: url('/public/bg003.png');
+    background-image: url('/public/bg002.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -69,7 +69,7 @@ code {
 .card-img {
     position: relative;
     display: inline-block;
-    background-image: url('/public/bg008.png');
+    background-image: url('/public/bg003.png');
     background-size: cover;
     background-repeat: repeat;
 }
