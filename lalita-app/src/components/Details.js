@@ -36,7 +36,7 @@ const Details = () =>{
         <Tabs value="experience">
           <TabsHeader className="overflow-y-auto">
             {data.map(({ label, value }) => (
-              <Tab key={value} value={value}>
+              <Tab key={value} value={value} className="mx-1 md:mx-0">
                 <p className="text-lg font-semibold">
                 {label}
                 </p>

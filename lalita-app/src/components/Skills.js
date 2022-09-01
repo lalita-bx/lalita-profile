@@ -6,7 +6,7 @@ const Skills = () =>{
     return (
         <div>
             <div className="grid grid-cols-3 grid-flow-row py-5">
-                <div className="self-center justify-self-center col-span-3 md:pt-10">
+                <div className="self-center justify-self-center col-span-3 pt-16 md:pt-10">
                     <Tooltip content="Basic Frontend" placement="left-start">
                         <img className="block mx-auto h-36 hover:scale-110 transition duration-300 ease-in-out" src="/logo-basic.png" alt="basic frontend"/>
                     </Tooltip>
@@ -50,8 +50,8 @@ const Skills = () =>{
                     </div>
                 </div>
 
-                <div className="self-center justify-self-center col-span-3 pt-10 pb-5 font-bold cursor-pointer">
-                    <Tooltip content="Vue.JS, Flask, Postman" placement="bottom">
+                <div className="self-center justify-self-center col-span-3 pt-10 pb-5 font-bold cursor-pointer hover:scale-110 transition duration-100 ease-in-out">
+                    <Tooltip content="Vue.JS, Flask, Postman, Illustrator" placement="bottom">
                         .etc
                     </Tooltip>
                 </div>

@@ -15,8 +15,8 @@ import {
 const ProfileDetails = () =>{
     return (
 
-        <div className="grid grid-cols-6 grid-flow-row px-10 pt-10 md:pt-20 md:mx-20 gap-4" id="section2">
-            <div className="self-center justify-self-center md:col-span-2 col-span-6 w-full h-full">
+        <div className="grid grid-cols-6 grid-flow-row px-5 pt-10 md:pt-20 mx-0 xl:mx-20 gap-4" id="section2">
+            <div className="self-center justify-self-center lg:col-span-2 col-span-6 w-full h-full">
                 <Card className="card h-full">
                     <CardHeader floated={false} className="card-img mx-20 h-50 transition-all duration-500">
                         <img
@@ -26,7 +26,7 @@ const ProfileDetails = () =>{
                             className="img-front mx-auto transition-all duration-500"
                         />
                         <img
-                            src="/me-heart.png"
+                            src="/me-hi.png"
                             alt="img-blur-shadow"
                             className="img-back mx-auto transition-all duration-500"
                         />
@@ -84,7 +84,7 @@ const ProfileDetails = () =>{
                     </CardFooter>
                 </Card>
             </div>
-            <div className="self-center justify-self-center col-span-6 md:col-span-4 w-full h-full">
+            <div className="self-center justify-self-center col-span-6 lg:col-span-4 w-full h-full">
                 <Card className="card h-full">
                     <CardBody >
                         <Details />
