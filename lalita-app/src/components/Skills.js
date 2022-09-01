@@ -50,8 +50,8 @@ const Skills = () =>{
                     </div>
                 </div>
 
-                <div className="self-center justify-self-center col-span-3 pt-10 pb-5 font-bold cursor-pointer">
-                    <Tooltip content="Vue.JS, Flask, Postman" placement="bottom">
+                <div className="self-center justify-self-center col-span-3 pt-10 pb-5 font-bold cursor-pointer hover:scale-110 transition duration-100 ease-in-out">
+                    <Tooltip content="Vue.JS, Flask, Postman, Illustrator" placement="bottom">
                         .etc
                     </Tooltip>
                 </div>

@@ -26,7 +26,7 @@ const ProfileDetails = () =>{
                             className="img-front mx-auto transition-all duration-500"
                         />
                         <img
-                            src="/me-heart.png"
+                            src="/me-hi.png"
                             alt="img-blur-shadow"
                             className="img-back mx-auto transition-all duration-500"
                         />
