@@ -3,7 +3,7 @@ import '../styles/styles.css'
 const Education = () =>{
     return (
 
-        <div className="grid my-5">
+        <div className="grid my-5 pt:10 md:pt-12">
             <div className="self-center justify-self-center">
                 <i className="fas fa-graduation-cap fa-2x my-4 animate-bounce" />
                 <img

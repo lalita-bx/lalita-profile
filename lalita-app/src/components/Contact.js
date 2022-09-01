@@ -7,7 +7,7 @@ import {
 const Contact = () =>{
     
     return (
-        <div className="grid place-content-center h-96 md:pt-40 text-justify text-base md:text-2xl overflow-y-auto">
+        <div className="grid place-content-center h-96 pt-14 md:pt-40 text-justify text-base md:text-2xl overflow-y-auto">
             <div>
                 <i className="pr-4 fas fa-envelope" /> 
                 <p className="inline-block text-sm md:text-2xl">lalita.yodsri@gmail.com</p> 
