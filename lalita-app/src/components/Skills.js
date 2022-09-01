@@ -20,7 +20,7 @@ const Skills = () =>{
 
                 <div className="self-center justify-self-center">
                     <Tooltip content="React" placement="right-end">
-                        <img src="/logo512.png" alt="react" className="inline-block max-h-36 m-auto hover:scale-110 transition duration-300 ease-in-out"/>
+                        <img src="/logo-react.png" alt="react" className="inline-block max-h-36 m-auto hover:scale-110 transition duration-300 ease-in-out"/>
                     </Tooltip>
                 </div>
 
