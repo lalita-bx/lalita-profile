@@ -21,7 +21,7 @@ const Contact = () =>{
                 </CopyToClipboard>
             </div>
             <div><i className="pl-0.5 pr-3.5 fas fa-mobile-alt" /> 065-347-0896</div>
-            <div><i className="pl-0.5 pr-3.5 fas fa-id-badge" /> My <a href="https://drive.google.com/file/d/1qiMjVNmfqAcZxVXf3sEj-5c0fRoff8_H/view?usp=sharing" target="blank" className="font-bold text-deep-purple-400 hover:text-deep-purple-900">resume <i className="fas fa-external-link-alt fa-xs" /></a></div>
+            <div><i className="pl-0.5 pr-3.5 fas fa-id-badge" /> My <a href="https://drive.google.com/file/d/1VT_rgZa_wD1f9DOw_6QvaBWZfJaUCFd9/view?usp=sharing" target="blank" className="font-bold text-deep-purple-400 hover:text-deep-purple-900">resume <i className="fas fa-external-link-alt fa-xs" /></a></div>
 
         </div>
     );
