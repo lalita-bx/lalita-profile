@@ -1,52 +1,44 @@
+import { useEffect, useState } from "react";
+import GlobalService from "../service/Global.service";
 
-const Experience = () =>{
+const Experience = () => {
+    const [expData, setExp] = useState();
 
-    const data = [
-        {
-          label: "Bank of Ayudhya Public Co., Ltd.",
-          time: `November 2021 – Present`,
-          desc: `Krungsri Smart Experience: Maintaining and developing project by Visualforce Page, AngularJS, Aura Component, Apex language and Python language.`,
-        },
+    useEffect(() => {
+        const getExperienceService = async () => {
+            let exp = await GlobalService.getExperience();
+            if (exp.status === 200) {
+                console.log(exp.data);
+                setExp(exp.data);
+            } else {
+                console.log(exp);
+            }
+        };
+        getExperienceService();
+    }, []);
 
-        {
-          label: "I&I Group Public Co., Ltd.",
-          time: `April 2020 – November 2021`,
-          desc: `Salesforces Project: Create custom Lightning Component,
-           triggers, test className, connect REST API to Salesforce, create changes set to deploy to another org and proof of concept to find possibility to develop. 
-           Developed controller by Apex language.`,
-        },
-     
-        {
-          label: "Internet Thailand Public Co., Ltd.",
-          time: `September 2019 - April 2020`,
-          desc: `Alumni Web Application: Design system structure. 
-          Developed Web API by Python language with Flask Web Framework. Support Front-End developed by Vue.JS. Use Git to coordinate with the team.`,
-        },
-
-        {
-          label: "C.S.I. (Thailand) Co., Ltd.",
-          time: `June 2018 - November 2018`,
-          desc: `Localization Software: Studied from the source code examples of subprogram within the program. 
-          The development is based on Microsoft Visual Studio 2010 with Visual Basic language and Oracle database through PL/SQL program.`,
-        },
-     
-    ];
     return (
         <div className="flex text-left mt-5 md:mt-10 mx-0 md:mx-5 card-exp overflow-auto">
-            <ol className="relative h-fit border-l border-gray-300 dark:border-gray-700">   
-                {data.map(({ label, time, desc }) => (
-                    <li key={label} value={desc} className="mb-8 ml-4">
-                        <div className="absolute w-3 h-3 bg-gray-300 rounded-full mt-2 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                        <time className="mb-1 text-sm font-normal leading-none text-gray-600 dark:text-gray-700">{time}</time>
-                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{label}</h3>
-                        <p className="mb-3 text-base font-normal text-left md:text-justify text-gray-700 dark:text-gray-400">{desc}</p>
-                        {/* <a href="#" className="inline-flex items-center py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">Learn more <svg className="ml-2 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a> */}
-                    </li>
-                ))}
+            <ol className="relative h-fit border-l border-gray-300 dark:border-gray-700">
+                {expData
+                    ? expData.map(({ label, time, desc }) => (
+                        <li key={label} value={desc} className="mb-8 ml-4">
+                            <div className="absolute w-3 h-3 bg-gray-300 rounded-full mt-2 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                            <time className="mb-1 text-sm font-normal leading-none text-gray-600 dark:text-gray-700">
+                                {time}
+                            </time>
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                                {label}
+                            </h3>
+                            <p className="mb-3 text-base font-normal text-left md:text-justify text-gray-700 dark:text-gray-400">
+                                {desc}
+                            </p>
+                        </li>
+                    ))
+                    : ""}
             </ol>
         </div>
-
     );
-}
+};
 
-export default Experience
+export default Experience;
