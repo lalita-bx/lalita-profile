@@ -1,16 +1,16 @@
-import {CopyToClipboard} from 'react-copy-to-clipboard';
-import { 
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import {
     IconButton,
-    Tooltip, 
+    Tooltip,
 } from "@material-tailwind/react";
 
-const Contact = () =>{
-    
+const Contact = () => {
+
     return (
         <div className="grid place-content-center h-96 pt-14 md:pt-40 text-justify text-base md:text-2xl overflow-y-auto">
             <div>
-                <i className="pr-4 fas fa-envelope" /> 
-                <p className="inline-block text-sm md:text-2xl">lalita.yodsri@gmail.com</p> 
+                <i className="pr-4 fas fa-envelope" />
+                <p className="inline-block text-sm md:text-2xl">lalita.yodsri@gmail.com</p>
                 <CopyToClipboard text='lalita.yodsri@gmail.com'
                     onCopy={() => console.log('copied')}>
                     <IconButton variant="text" size="sm" className='pt-3'>
