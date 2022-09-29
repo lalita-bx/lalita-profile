@@ -1,19 +1,14 @@
 import './styles/styles.css'
 import ProfileDetails from './components/ProfileDetails';
+import AnimeQuotes from './components/AnimeQuotes';
 
 function App() {
-    
+
     return (
         <div className="app select-none" id="section1">
             <header className="app-header">
-                <div className="text-8xl font-extrabold">
-                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-300  via-deep-purple-200 to-pink-200 animate-text">
-                        Hello<br/>
-                        Hello<br/>
-                        Hello<br/>
-                    </span>
-                </div>
-                <div className="absolute h-full w-32 ">
+                <AnimeQuotes />
+                <div className="absolute h-0 bottom-0 w-32 ">
                     <div className="absolute inset-x-0 bottom-10 h-16">
                         <a href="#section2" className="text-deep-purple-300">
                             <i className="fas fa-angle-down mb-10 fa-2x animate-bounce w-6 h-6 " />
