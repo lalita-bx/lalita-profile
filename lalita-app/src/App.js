@@ -8,13 +8,6 @@ function App() {
         <div className="app select-none" id="section1">
             <header className="app-header">
                 <AnimeQuotes />
-                <div className="absolute h-0 bottom-0 w-32 ">
-                    <div className="absolute inset-x-0 bottom-10 h-16">
-                        <a href="#section2" className="text-deep-purple-300">
-                            <i className="fas fa-angle-down mb-10 fa-2x animate-bounce w-6 h-6 " />
-                        </a>
-                    </div>
-                </div>
             </header>
             <div className="profile-body">
                 <ProfileDetails />
