@@ -19,7 +19,7 @@ const AnimeQuotes = () => {
                     newElement.className = "cursor-pointer text-focus-in block";
                     const nextPageElement = document.getElementById('next-page');
                     nextPageElement.className = "h-0 bottom-0 w-32 ";
-                });
+                }, 2);
             } else {
                 console.log(quotes);
             }
@@ -72,7 +72,7 @@ const AnimeQuotes = () => {
                             </div>
                         </div>
                         <div id="next-page" className="hidden">
-                            <div className="absolute inset-x-0 bottom-10 h-16 text-focus-in">
+                            <div className="absolute inset-x-0 lg:bottom-10 bottom-2 h-16 text-focus-in">
                                 <a href="#section2" className="text-deep-purple-200 ">
                                     <i className="fas fa-angle-down mb-10 fa-2x animate-bounce w-6 h-6" />
                                 </a>
