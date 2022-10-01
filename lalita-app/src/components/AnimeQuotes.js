@@ -19,7 +19,7 @@ const AnimeQuotes = () => {
                     newElement.className = "cursor-pointer text-focus-in block";
                     const nextPageElement = document.getElementById('next-page');
                     nextPageElement.className = "h-0 bottom-0 w-32 ";
-                }, 100);
+                });
             } else {
                 console.log(quotes);
             }
